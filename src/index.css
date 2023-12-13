@@ -7,6 +7,7 @@
 :root {
   --App-Color: #1e1e1e;
   --Color-span: ##ec722f;
+
   --Header-Color: #1e1e1e;
   --Color-Border-Btn: #03c22d;
   --Container-Padding: 80px 0;
@@ -14,9 +15,21 @@
   --Border-btn: #547a7f;
   --ColorBTN: #05131b;
   --Main-h1-color: #86fbe5;
+  --Color-Hover: #041f29;
 
   --SegundaFuente: sans-serif;
   --Color-Span: #ff7a00;
+  --Line-Border: #86fae5;
+  --Color-Card: #141d2739;
+  --Color-Border_NoHover: #253246;
+  --Color-Blur: #06333b;
+  --Backgroud-Color: #000913;
+  --Border-Second-Section: #142d32;
+  --Color-Span-Second: #86fae5;
+  --Border-Input: #0f252b;
+  --Backgroud-input: #01121c;
+  --Color-btn: #faff00;
+  --Color-Carousel: #1b2024;
 }
 
 body {
@@ -155,6 +168,7 @@ a {
   width: 100%;
   max-width: 800px;
   position: relative;
+  height: 509px;
   z-index: 0;
 }
 
@@ -175,20 +189,30 @@ a {
 
 .main__cards {
   position: absolute;
+  z-index: 2;
+}
+.main__cards {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .card {
   position: relative;
   top: 180px;
   z-index: 3;
-}
-
-.card {
-  border: 1px solid white;
+  border: 2px solid var(--Color-Border_NoHover);
   width: 100%;
-  max-width: 480px;
-  padding: 50px 50px;
+  max-width: 430px;
+  padding: 30px 50px;
+
   height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  background-color: var(--Color-Card);
+  margin-bottom: 20px;
 }
 
 .Section__information {
@@ -198,8 +222,141 @@ a {
   max-width: 100px;
 }
 
-.main__cards {
-  max-width: 700px;
+.card:hover {
+  /*background: var(--Color-Hover);*/
+  box-shadow: inset 0 0 10px 5px var(--Color-Blur);
+  border-color: var(--Line-Border);
+  transform: translateY(-5px);
+}
+.OthersCards {
+  display: inline-block;
+}
+
+.Section__Profecion {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 11px;
+}
+.Section__Name {
+  margin-top: 6px;
+}
+
+.section__Second {
+  background-color: var(--Backgroud-Color);
+  border: 2px solid var(--Border-Second-Section);
+  position: relative;
+  bottom: 8px;
+  border-radius: 10px;
+}
+
+.Input {
+  position: relative;
+  z-index: 3;
+
+  width: 400px !important;
+  margin-bottom: 5px !important;
+  border-color: var(--Border-Input);
+  background-color: var(--Backgroud-input);
+  color: white !important;
+}
+
+.Text__fields__both {
   display: flex;
-  justify-content: space-between;
+  gap: 8px !important;
+}
+
+.both {
+  width: 200px !important;
+}
+
+.Second_SPan {
+  color: var(--Color-Span-Second);
+}
+
+.Second__Section__Title {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.section__container__Second {
+  --Container-Padding: 40px 0 45px;
+}
+
+.There__SPan {
+  color: var(--Color-Span);
+}
+
+.Second_paragrah {
+  font-size: 13px;
+  text-align: center;
+}
+
+.parrafo {
+  font-size: 12px;
+  text-align: center;
+}
+
+.Second__Section__Paragrah {
+  margin-bottom: 25px;
+}
+
+.btn-Field {
+  width: 390px !important;
+  padding: 10px !important;
+  margin-top: 10px !important;
+}
+.Second__Section__Form {
+  width: 100%;
+}
+
+.Section__Three {
+  background-color: var(--Color-Carousel);
+}
+
+.carousel {
+  background-color: red !important;
+}
+
+.img__Section__there {
+  margin-left: 110px !important;
+}
+
+.span__livegood {
+  color: var(--Color-Span);
+}
+
+.livegood_h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.Section__three__data {
+  margin-bottom: 30px;
+}
+
+.btn__three {
+  background-color: var(--Color-Carousel);
+}
+
+.btn__section__three {
+  margin-bottom: 30px;
+}
+
+.section__container__three {
+  --Container-Padding: 50px 0 45px;
+}
+
+.Section__Three {
+  position: relative;
+  bottom: 30px;
+}
+
+.h1__footer {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.Header__main {
+  --Container-Padding: 40px 0 25px;
 }
